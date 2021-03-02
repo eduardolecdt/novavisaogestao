@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://novavisaogestao.com.br/assets/docs/sitemap.xml

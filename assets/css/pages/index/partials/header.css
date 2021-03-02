@@ -1,0 +1,15 @@
+/*
+
+INDEX > HEADER
+
+*/
+
+header {
+  display: flex;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 1000px) {
+
+}

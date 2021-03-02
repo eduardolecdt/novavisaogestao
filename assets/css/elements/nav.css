@@ -1,0 +1,14 @@
+/*
+
+ELEMENTS > NAV
+
+*/
+
+nav {
+  opacity: 1;
+}
+
+/* media queryes */
+
+@media (max-width: 1000px) {
+}
