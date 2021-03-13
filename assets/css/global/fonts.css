@@ -5,9 +5,25 @@ FONTES
 */
 
 @font-face {
-  font-family: '';
+  font-family: 'gt_walsheim_bold';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../fonts/gt-walsheim-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gt_walsheim_medium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../fonts/gt-walsheim-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'gt_walsheim_regular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../fonts/gt-walsheim-regular.woff') format('woff');
 }

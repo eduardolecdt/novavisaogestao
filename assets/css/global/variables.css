@@ -10,8 +10,19 @@ VARIABLES
 
   --cor-branco: #FFFFFF;
 
+  --cor-cinza-1: #EFEFF9;
+  --cor-cinza-2: #B3B7CB;
+  --cor-cinza-3: #A3AFC2;
+  --cor-cinza-4: #8690A4;
+
+  --cor-laranja: #FF6700;
+  --cor-amarelo: #FFC200;
+  --cor-verde: #48C783;
+
   /* Fontes */
 
-  --fonte-: '';
+  --fonte-bold: 'gt_walsheim_bold';
+  --fonte-medium: 'gt_walsheim_medium';
+  --fonte-regular: 'gt_walsheim_regular';
 
 }
