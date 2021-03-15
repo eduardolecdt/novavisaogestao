@@ -1,10 +1,10 @@
 /*
 
-INDEX > FOOTER
+INDEX > section - suporteParceiros
 
 */
 
-footer {
+section.suporteParceiros {
   display: none;
 }
 

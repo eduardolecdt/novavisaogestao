@@ -1,11 +1,11 @@
 /*
 
-INDEX > HEADER
+INDEX > section - crescerJuntos
 
 */
 
-header {
-  display: flex;
+section.crescerJuntos {
+  display: none;
 }
 
 /*

@@ -1,11 +1,11 @@
 /*
 
-INDEX > HEADER
+INDEX > section - bandeiraBranca
 
 */
 
-header {
-  display: flex;
+section.bandeiraBranca {
+  display: none;
 }
 
 /*

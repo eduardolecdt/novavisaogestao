@@ -1,11 +1,11 @@
 /*
 
-INDEX > HEADER
+INDEX > section - vendasClientes
 
 */
 
-header {
-  display: flex;
+section.vendasClientes {
+  display: none;
 }
 
 /*

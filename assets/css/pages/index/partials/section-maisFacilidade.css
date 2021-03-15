@@ -1,11 +1,11 @@
 /*
 
-INDEX > HEADER
+INDEX > section - maisFacilidade
 
 */
 
-header {
-  display: flex;
+section.maisFacilidade {
+  display: none;
 }
 
 /*

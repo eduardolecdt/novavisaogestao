@@ -1,11 +1,11 @@
 /*
 
-INDEX > HEADER
+INDEX > section - serParceiro
 
 */
 
-header {
-  display: flex;
+section.serParceiro {
+  display: none;
 }
 
 /*

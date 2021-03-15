@@ -1,10 +1,10 @@
 /*
 
-INDEX > FOOTER
+INDEX > section - propostaInvestidor
 
 */
 
-footer {
+section.propostaInvestidor {
   display: none;
 }
 
