@@ -6,6 +6,88 @@ INDEX > HEADER
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+header .faixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--cor-laranja);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header .faixa p {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-branco);
+  padding: 10px 20px;
+}
+
+header .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  padding: 100px;
+}
+
+header .texto h2 {
+  font-family: var(--fonte-regular);
+  font-size: 1.3rem;
+  color: var(--cor-cinza-4);
+}
+
+header .texto h2 span {
+  color: var(--cor-laranja);
+}
+
+header .texto h1 {
+  font-family: var(--fonte-bold);
+  font-size: 2.5rem;
+  color: var(--cor-cinza-4);
+  padding: 10px 0 0 0;
+}
+
+header .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-4);
+  padding: 10px 0 15px 0;
+}
+
+header .texto button {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  background-color: var(--cor-laranja);
+  color: var(--cor-branco);
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+header .texto button:hover {
+  background-color: var(--cor-verde);
+}
+
+header img.imagem {
+  width: 75%;
+  position: absolute;
+  bottom: 0;
+  right: -300px;
 }
 
 /*

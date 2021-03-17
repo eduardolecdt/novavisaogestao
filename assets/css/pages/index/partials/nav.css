@@ -1,11 +1,11 @@
 /*
 
-INDEX > FOOTER
+INDEX > NAV
 
 */
 
-footer {
-  display: flex;
+nav {
+  display: none;
 }
 
 /*
