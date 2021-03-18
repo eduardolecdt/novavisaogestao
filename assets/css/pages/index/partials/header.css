@@ -11,6 +11,10 @@ header {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
+  background-image: url('../../../../images/index/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 header .faixa {
@@ -18,9 +22,9 @@ header .faixa {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--cor-laranja);
+  background-color: var(--cor-cinza-2);
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   width: 100%;
 }
@@ -29,7 +33,7 @@ header .faixa p {
   font-family: var(--fonte-medium);
   font-size: 1rem;
   color: var(--cor-branco);
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 header .texto {
@@ -45,13 +49,9 @@ header .texto {
 }
 
 header .texto h2 {
-  font-family: var(--fonte-regular);
+  font-family: var(--fonte-medium);
   font-size: 1.3rem;
   color: var(--cor-cinza-4);
-}
-
-header .texto h2 span {
-  color: var(--cor-laranja);
 }
 
 header .texto h1 {
@@ -84,7 +84,7 @@ header .texto button:hover {
 }
 
 header img.imagem {
-  width: 75%;
+  width: 65%;
   position: absolute;
   bottom: 0;
   right: -300px;
@@ -97,5 +97,34 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  header {
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    padding: 0 30px 50px 30px;
+  }
+  header .texto {
+    padding: 150px 0 60px 0;
+  }
+  header img.imagem {
+    width: 100%;
+    max-width: 400px;
+    position: initial;
+  }
+  header .texto h2 {
+    font-size: 1.2rem;
+  }
+  header .texto h1 {
+    font-size: 2rem;
+  }
+  header .texto p {
+    font-size: 1rem;
+  }
+  header .texto button {
+    font-size: 1rem;
+  }
+  header .faixa p {
+    font-size: 0.8rem;
+    padding: 12px 30px;
+  }
 }

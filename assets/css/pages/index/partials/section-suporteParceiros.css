@@ -5,7 +5,49 @@ INDEX > section - suporteParceiros
 */
 
 section.suporteParceiros {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('../../../../images/index/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Título */
+
+section.suporteParceiros .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 80px 100px 50px 100px;
+}
+
+/* Slide */
+
+section.suporteParceiros .slide {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 100px 0 100px;
+}
+
+/* Ação */
+
+section.suporteParceiros .acao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 100%;
+  padding: 50px 100px 80px 100px;
 }
 
 /*

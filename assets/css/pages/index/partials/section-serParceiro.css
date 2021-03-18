@@ -5,7 +5,50 @@ INDEX > section - serParceiro
 */
 
 section.serParceiro {
-  display: none;
+  width: 100%;
+  background-color: var(--cor-cinza-1);
+}
+
+section.serParceiro .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.serParceiro .conteudo .imagem {
+  width: 40%;
+  background-color: var(--cor-cinza-3);
+  background-image: url('../../../../images/index/maos-dadas.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  border-right: 50px solid var(--cor-laranja);
+}
+
+section.serParceiro .conteudo .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 60%;
+  padding: 0 50px;
+}
+
+section.serParceiro .conteudo .texto p {
+  font-family: var(--fonte-medium);
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-4);
+  width: 100%;
+  max-width: 500px;
+}
+
+section.serParceiro .conteudo .texto p span {
+  font-family: var(--fonte-bold);
+  color: var(--cor-laranja);
 }
 
 /*
@@ -15,5 +58,20 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  section.serParceiro .conteudo {
+    flex-direction: column;
+  }
+  section.serParceiro .conteudo .imagem {
+    width: 100%;
+    min-height: 250px;
+    border-right: 0px solid var(--cor-laranja);
+    border-bottom: 20px solid var(--cor-laranja);
+  }
+  section.serParceiro .conteudo .texto {
+    width: 100%;
+    padding: 30px 30px;
+  }
+  section.serParceiro .conteudo .texto p {
+    font-size: 1.5rem;
+  }
 }

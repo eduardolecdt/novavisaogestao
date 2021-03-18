@@ -5,7 +5,46 @@ INDEX > NAV
 */
 
 nav {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-branco);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 10px 100px;
+  min-height: 50px;
+  transition: all 0.3s;
+}
+
+nav.scroll {
+  box-shadow: 0px 0px 80px 0px rgba(134, 144, 164, 0.3);
+}
+
+nav img.logo {
+  width: 150px;
+  margin-right: auto;
+  padding: 0 0 4px 0;
+}
+
+nav .opcoes button {
+  font-family: var(--fonte-regular);
+  background-color: transparent;
+  font-size: 1rem;
+  color: var(--cor-cinza-4);
+  transition: all 0.3s;
+  margin: 0 0 0 30px;
+}
+
+nav .opcoes button:hover {
+  opacity: 0.5;
+}
+
+nav .opcoes button.destaque {
+  font-family: var(--fonte-medium);
+  color: var(--cor-laranja);
 }
 
 /*
@@ -15,5 +54,16 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  nav {
+    padding: 10px 30px;
+  }
+  nav img.logo {
+    width: 100px;
+  }
+  nav .opcoes button {
+    display: none;
+  }
+  nav .opcoes button.destaque {
+    display: flex;
+  }
 }
