@@ -69,7 +69,7 @@ Responsivo
   }
   section.serParceiro .conteudo .texto {
     width: 100%;
-    padding: 30px 30px;
+    padding: 30px 30px 30px 30px;
   }
   section.serParceiro .conteudo .texto p {
     font-size: 1.5rem;

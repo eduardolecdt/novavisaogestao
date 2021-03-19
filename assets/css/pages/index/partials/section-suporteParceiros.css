@@ -20,12 +20,44 @@ section.suporteParceiros {
 
 section.suporteParceiros .titulo {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   text-align: left;
   width: 100%;
   padding: 80px 100px 50px 100px;
+}
+
+section.suporteParceiros .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 2.5rem;
+  width: 100%;
+  max-width: 550px;
+  margin-right: auto;
+  color: var(--cor-cinza-4);
+}
+
+section.suporteParceiros .titulo .setas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.suporteParceiros .titulo .setas button {
+  background-color: transparent;
+  margin-left: 40px;
+  transition: all 0.3s;
+}
+
+section.suporteParceiros .titulo .setas button img {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  pointer-events: none;
+}
+
+section.suporteParceiros .titulo .setas button:hover {
+  opacity: 0.7;
 }
 
 /* Slide */
@@ -34,20 +66,99 @@ section.suporteParceiros .slide {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  overflow: hidden;
   width: 100%;
+  scrollbar-width: none;
+}
+
+section.suporteParceiros .slide::-webkit-scrollbar {
+  display: none;
+}
+
+section.suporteParceiros .slide .itens {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 0 100px 0 100px;
+  transition: all 0.3s;
+}
+
+section.suporteParceiros .slide .itens .item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  width: 300px;
+  background-color: var(--cor-cinza-1);
+  margin-right: 30px;
+  border-radius: 15px;
+}
+
+section.suporteParceiros .slide .itens .item .imagem {
+  width: 100%;
+  height: 150px;
+  background-color: var(--cor-cinza-2);
+  border-radius: 15px 15px 0 0;
+}
+
+section.suporteParceiros .slide .itens .item h3 {
+  font-family: var(--fonte-medium);
+  font-size: 1.3rem;
+  color: var(--cor-cinza-4);
+  padding: 30px 30px 10px 30px;
+}
+
+section.suporteParceiros .slide .itens .item p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-4);
+  padding: 0 30px 30px 30px;
 }
 
 /* Ação */
 
 section.suporteParceiros .acao {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   text-align: left;
   width: 100%;
-  padding: 50px 100px 80px 100px;
+  padding: 80px 100px 0 100px;
+}
+
+section.suporteParceiros .acao .texto {
+  margin-right: auto;
+  padding: 0 0 80px 0;
+}
+
+section.suporteParceiros .acao .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 600px;
+  padding: 0 0 10px 0;
+  color: var(--cor-cinza-4);
+}
+
+section.suporteParceiros .acao .texto button {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  background-color: var(--cor-laranja);
+  color: var(--cor-branco);
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.suporteParceiros .acao .texto button:hover {
+  background-color: var(--cor-verde);
+}
+
+section.suporteParceiros .acao img {
+  width: 350px;
 }
 
 /*
@@ -57,5 +168,56 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  section.suporteParceiros .titulo {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 30px 50px 30px;
+  }
+  section.suporteParceiros .titulo h2 {
+    font-size: 1.8rem;
+  }
+  section.suporteParceiros .titulo .setas {
+    padding: 30px 0 0 0;
+  }
+  section.suporteParceiros .titulo .setas button {
+    margin-left: 0;
+    margin-right: 20px;
+  }
+  section.suporteParceiros .titulo .setas button img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+  }
+  section.suporteParceiros .slide {
+    overflow: scroll;
+  }
+  section.suporteParceiros .slide .itens {
+    padding: 0 0 0 30px;
+  }
+  section.suporteParceiros .slide .itens .item {
+    margin-right: 30px;
+  }
+  section.suporteParceiros .slide .itens .item h3 {
+    font-size: 1.2rem;
+  }
+  section.suporteParceiros .slide .itens .item p {
+    font-size: 1rem;
+  }
+  section.suporteParceiros .acao {
+    flex-direction: column;
+    padding: 60px 30px 0 30px;
+  }
+  section.suporteParceiros .acao .texto {
+    padding: 0 0 60px 0;
+  }
+  section.suporteParceiros .acao .texto p {
+    font-size: 1rem;
+  }
+  section.suporteParceiros .acao .texto button {
+    font-size: 1rem;
+  }
+  section.suporteParceiros .acao img {
+    width: 250px;
+  }
 }

@@ -5,7 +5,64 @@ INDEX > section - bandeiraBranca
 */
 
 section.bandeiraBranca {
-  display: none;
+  width: 100%;
+  background-color: var(--cor-cinza-1);
+}
+
+section.bandeiraBranca .conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+section.bandeiraBranca .conteudo .imagem {
+  width: 50%;
+  background-color: var(--cor-cinza-3);
+  background-image: url('../../../../images/index/carro-bandeira-branca.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  min-height: 300px;
+  border-left: 50px solid var(--cor-laranja);
+}
+
+section.bandeiraBranca .conteudo .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+  width: 60%;
+  padding: 0 50px;
+}
+
+section.bandeiraBranca .conteudo .texto p {
+  font-family: var(--fonte-medium);
+  font-size: 1.7rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-4);
+  width: 100%;
+  max-width: 500px;
+}
+
+section.bandeiraBranca .conteudo .texto p span {
+  font-family: var(--fonte-bold);
+  color: var(--cor-laranja);
+}
+
+section.bandeiraBranca .conteudo .texto button {
+  font-family: var(--fonte-medium);
+  font-size: 1rem;
+  color: var(--cor-verde);
+  background-color: transparent;
+  text-decoration: underline;
+  margin: 10px 0 0 0;
+  transition: all 0.3s;
+}
+
+section.bandeiraBranca .conteudo .texto button:hover {
+  opacity: 0.7;
 }
 
 /*
@@ -15,5 +72,20 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  section.bandeiraBranca .conteudo {
+    flex-direction: column-reverse;
+  }
+  section.bandeiraBranca .conteudo .imagem {
+    width: 100%;
+    min-height: 250px;
+    border-left: 0px solid var(--cor-laranja);
+    border-bottom: 20px solid var(--cor-laranja);
+  }
+  section.bandeiraBranca .conteudo .texto {
+    width: 100%;
+    padding: 30px 30px 30px 30px;
+  }
+  section.bandeiraBranca .conteudo .texto p {
+    font-size: 1.5rem;
+  }
 }

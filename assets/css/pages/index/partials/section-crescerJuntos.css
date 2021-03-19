@@ -5,7 +5,71 @@ INDEX > section - crescerJuntos
 */
 
 section.crescerJuntos {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--cor-cinza-1);
+}
+
+section.crescerJuntos img.carro {
+  width: 100%;
+}
+
+section.crescerJuntos .frases {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
+  padding: 100px 100px 0 100px;
+}
+
+section.crescerJuntos .frases .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin-right: auto;
+}
+
+section.crescerJuntos .frases .texto p {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--cor-cinza-4);
+  padding: 0 0 15px 0;
+}
+
+section.crescerJuntos .frases .texto button {
+  font-family: var(--fonte-regular);
+  font-size: 1.1rem;
+  background-color: var(--cor-laranja);
+  color: var(--cor-branco);
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+section.crescerJuntos .frases .texto button:hover {
+  background-color: var(--cor-verde);
+}
+
+section.crescerJuntos .frases .titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: right;
+  padding: 0 0 50px 0;
+}
+
+section.crescerJuntos .frases .titulo h2 {
+  font-family: var(--fonte-bold);
+  font-size: 4rem;
+  color: var(--cor-cinza-4);
 }
 
 /*
@@ -15,5 +79,25 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-
+  section.crescerJuntos .frases {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px 0 30px;
+  }
+  section.crescerJuntos .frases .texto {
+    margin-right: 0;
+  }
+  section.crescerJuntos .frases .texto p {
+    font-size: 1rem;
+  }
+  section.crescerJuntos .frases .texto button {
+    font-size: 1rem;
+  }
+  section.crescerJuntos .frases .titulo {
+    padding: 50px 0 50px 0;
+    width: 100%;
+  }
+  section.crescerJuntos .frases .titulo h2 {
+    font-size: 3rem;
+  }
 }
