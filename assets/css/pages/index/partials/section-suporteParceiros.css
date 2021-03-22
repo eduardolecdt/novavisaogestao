@@ -6,7 +6,6 @@ INDEX > section - suporteParceiros
 
 section.suporteParceiros {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -14,17 +13,19 @@ section.suporteParceiros {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 100px;
 }
 
 /* Título */
 
 section.suporteParceiros .titulo {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   text-align: left;
   width: 100%;
-  padding: 80px 100px 50px 100px;
+  padding: 0 100px 0 0;
 }
 
 section.suporteParceiros .titulo h2 {
@@ -36,143 +37,17 @@ section.suporteParceiros .titulo h2 {
   color: var(--cor-cinza-4);
 }
 
-section.suporteParceiros .titulo .setas {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-section.suporteParceiros .titulo .setas button {
-  background-color: transparent;
-  margin-left: 40px;
-  transition: all 0.3s;
-}
-
-section.suporteParceiros .titulo .setas button img {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  min-height: 50px;
-  pointer-events: none;
-}
-
-section.suporteParceiros .titulo .setas button:hover {
-  opacity: 0.7;
-}
-
-/* Slide */
-
-section.suporteParceiros .slide {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  overflow: hidden;
-  width: 100%;
-  scrollbar-width: none;
-}
-
-section.suporteParceiros .slide::-webkit-scrollbar {
-  display: none;
-}
-
-section.suporteParceiros .slide .itens {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 100px 0 100px;
-  transition: all 0.3s;
-}
-
-section.suporteParceiros .slide .itens .item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  text-align: left;
-  width: 300px;
-  background-color: var(--cor-cinza-1);
-  margin-right: 30px;
-  border-radius: 15px;
-}
-
-section.suporteParceiros .slide .itens .item .imagem {
-  width: 100%;
-  height: 150px;
-  background-color: var(--cor-cinza-2);
-  border-radius: 15px 15px 0 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: contrast(50%) grayscale(20%);
-  opacity: 0.9;
-}
-
-section.suporteParceiros .slide .itens .item .imagem.um {
-  background-image: url('../../../../images/index/thumb-martelo-juiz-mesa.png');
-}
-
-section.suporteParceiros .slide .itens .item .imagem.dois {
-  background-image: url('../../../../images/index/thumb-homem-monitores-computador-mesa.png');
-}
-
-section.suporteParceiros .slide .itens .item .imagem.tres {
-  background-image: url('../../../../images/index/thumb-mulher-prancheta-mao.png');
-}
-
-section.suporteParceiros .slide .itens .item .imagem.quatro {
-  background-image: url('../../../../images/index/thumb-maos-tablet-grafico.png');
-}
-
-section.suporteParceiros .slide .itens .item .imagem.cinco {
-  background-image: url('../../../../images/index/thumb-moedas-mesa.png');
-}
-
-section.suporteParceiros .slide .itens .item .imagem.seis {
-  background-image: url('../../../../images/index/thumb-mao-teclado-grafico-cima.png');
-}
-
-section.suporteParceiros .slide .itens .item h3 {
-  font-family: var(--fonte-medium);
-  font-size: 1.3rem;
-  color: var(--cor-cinza-4);
-  padding: 30px 30px 10px 30px;
-}
-
-section.suporteParceiros .slide .itens .item p {
-  font-family: var(--fonte-regular);
-  font-size: 1.1rem;
-  line-height: 1.5;
-  color: var(--cor-cinza-4);
-  padding: 0 30px 30px 30px;
-}
-
-/* Ação */
-
-section.suporteParceiros .acao {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: left;
-  width: 100%;
-  padding: 80px 100px 0 100px;
-}
-
-section.suporteParceiros .acao .texto {
-  margin-right: auto;
-  padding: 0 0 80px 0;
-}
-
-section.suporteParceiros .acao .texto p {
+section.suporteParceiros .titulo p {
   font-family: var(--fonte-regular);
   font-size: 1.1rem;
   line-height: 1.5;
   width: 100%;
   max-width: 600px;
-  padding: 0 0 10px 0;
+  padding: 10px 0 15px 0;
   color: var(--cor-cinza-4);
 }
 
-section.suporteParceiros .acao .texto button {
+section.suporteParceiros .titulo button {
   font-family: var(--fonte-regular);
   font-size: 1.1rem;
   background-color: var(--cor-laranja);
@@ -182,12 +57,33 @@ section.suporteParceiros .acao .texto button {
   transition: all 0.3s;
 }
 
-section.suporteParceiros .acao .texto button:hover {
+section.suporteParceiros .titulo button:hover {
   background-color: var(--cor-verde);
 }
 
-section.suporteParceiros .acao img {
-  width: 350px;
+/* Slide */
+
+section.suporteParceiros .video {
+  width: 100%;
+}
+
+section.suporteParceiros .video .tamanho {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+section.suporteParceiros .video .tamanho iframe {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: var(--cor-preto);
 }
 
 /*
@@ -197,56 +93,20 @@ Responsivo
 */
 
 @media screen and (max-width: 1000px) {
-  section.suporteParceiros .titulo {
+  section.suporteParceiros {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 80px 30px 50px 30px;
+    padding: 80px 30px;
+  }
+  section.suporteParceiros .titulo {
+    padding: 0 0 50px 0;
   }
   section.suporteParceiros .titulo h2 {
     font-size: 1.8rem;
   }
-  section.suporteParceiros .titulo .setas {
-    padding: 30px 0 0 0;
-  }
-  section.suporteParceiros .titulo .setas button {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-  section.suporteParceiros .titulo .setas button img {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    min-height: 40px;
-  }
-  section.suporteParceiros .slide {
-    overflow: scroll;
-  }
-  section.suporteParceiros .slide .itens {
-    padding: 0 0 0 30px;
-  }
-  section.suporteParceiros .slide .itens .item {
-    margin-right: 30px;
-  }
-  section.suporteParceiros .slide .itens .item h3 {
-    font-size: 1.2rem;
-  }
-  section.suporteParceiros .slide .itens .item p {
+  section.suporteParceiros .titulo p {
     font-size: 1rem;
   }
-  section.suporteParceiros .acao {
-    flex-direction: column;
-    padding: 60px 30px 0 30px;
-  }
-  section.suporteParceiros .acao .texto {
-    padding: 0 0 60px 0;
-  }
-  section.suporteParceiros .acao .texto p {
+  section.suporteParceiros .titulo button {
     font-size: 1rem;
-  }
-  section.suporteParceiros .acao .texto button {
-    font-size: 1rem;
-  }
-  section.suporteParceiros .acao img {
-    width: 250px;
   }
 }

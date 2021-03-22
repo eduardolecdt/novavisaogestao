@@ -95,36 +95,14 @@ section.maisFacilidade .slide .itens .item {
   border-radius: 15px;
 }
 
-section.maisFacilidade .slide .itens .item .imagem {
-  width: 100%;
+section.maisFacilidade .slide .itens .item img {
+  width: 300px;
   height: 150px;
   background-color: var(--cor-cinza-2);
   border-radius: 15px 15px 0 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: contrast(50%) grayscale(20%);
-  opacity: 0.9;
-}
-
-section.maisFacilidade .slide .itens .item .imagem.um {
-  background-image: url('../../../../images/index/thumb-maos-apertando.png');
-}
-
-section.maisFacilidade .slide .itens .item .imagem.dois {
-  background-image: url('../../../../images/index/thumb-mao-carimbando-papel.png');
-}
-
-section.maisFacilidade .slide .itens .item .imagem.tres {
-  background-image: url('../../../../images/index/thumb-detran.png');
-}
-
-section.maisFacilidade .slide .itens .item .imagem.quatro {
-  background-image: url('../../../../images/index/thumb-mao-calculadora.png');
-}
-
-section.maisFacilidade .slide .itens .item .imagem.cinco {
-  background-image: url('../../../../images/index/thumb-homem-joia-dentro-carro.png');
 }
 
 section.maisFacilidade .slide .itens .item h3 {
