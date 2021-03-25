@@ -35,16 +35,7 @@ section.suporteParceiros .titulo h2 {
   max-width: 550px;
   margin-right: auto;
   color: var(--cor-cinza-4);
-}
-
-section.suporteParceiros .titulo p {
-  font-family: var(--fonte-regular);
-  font-size: 1.1rem;
-  line-height: 1.5;
-  width: 100%;
-  max-width: 600px;
-  padding: 10px 0 15px 0;
-  color: var(--cor-cinza-4);
+  padding: 0 0 20px 0;
 }
 
 section.suporteParceiros .titulo button {
@@ -102,9 +93,6 @@ Responsivo
   }
   section.suporteParceiros .titulo h2 {
     font-size: 1.8rem;
-  }
-  section.suporteParceiros .titulo p {
-    font-size: 1rem;
   }
   section.suporteParceiros .titulo button {
     font-size: 1rem;

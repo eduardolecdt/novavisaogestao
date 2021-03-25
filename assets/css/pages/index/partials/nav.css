@@ -4,6 +4,29 @@ INDEX > NAV
 
 */
 
+button.whatsapp {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: var(--cor-verde);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+button.whatsapp:hover {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+button.whatsapp img {
+  width: 60px;
+  height: 60px;
+  pointer-events: none;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -55,15 +78,16 @@ Responsivo
 
 @media screen and (max-width: 1000px) {
   nav {
-    padding: 10px 30px;
-  }
-  nav img.logo {
-    width: 100px;
-  }
-  nav .opcoes button {
     display: none;
   }
-  nav .opcoes button.destaque {
-    display: flex;
+  button.whatsapp {
+    right: 30px;
+    bottom: 30px;
+    width: 60px;
+    height: 60px;
+  }
+  button.whatsapp img {
+    width: 45px;
+    height: 45px;
   }
 }

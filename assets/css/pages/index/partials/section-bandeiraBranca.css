@@ -6,7 +6,7 @@ INDEX > section - bandeiraBranca
 
 section.bandeiraBranca {
   width: 100%;
-  background-color: var(--cor-cinza-1);
+  background-color: var(--cor-cinza-2);
 }
 
 section.bandeiraBranca .conteudo {
@@ -41,7 +41,7 @@ section.bandeiraBranca .conteudo .texto p {
   font-family: var(--fonte-medium);
   font-size: 1.7rem;
   line-height: 1.5;
-  color: var(--cor-cinza-4);
+  color: var(--cor-branco);
   width: 100%;
   max-width: 500px;
 }
@@ -49,20 +49,6 @@ section.bandeiraBranca .conteudo .texto p {
 section.bandeiraBranca .conteudo .texto p span {
   font-family: var(--fonte-bold);
   color: var(--cor-laranja);
-}
-
-section.bandeiraBranca .conteudo .texto button {
-  font-family: var(--fonte-medium);
-  font-size: 1rem;
-  color: var(--cor-verde);
-  background-color: transparent;
-  text-decoration: underline;
-  margin: 10px 0 0 0;
-  transition: all 0.3s;
-}
-
-section.bandeiraBranca .conteudo .texto button:hover {
-  opacity: 0.7;
 }
 
 /*
@@ -84,6 +70,7 @@ Responsivo
   section.bandeiraBranca .conteudo .texto {
     width: 100%;
     padding: 30px 30px 30px 30px;
+    text-align: left;
   }
   section.bandeiraBranca .conteudo .texto p {
     font-size: 1.5rem;

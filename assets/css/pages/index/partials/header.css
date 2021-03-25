@@ -104,7 +104,7 @@ Responsivo
     padding: 0 30px 50px 30px;
   }
   header .texto {
-    padding: 170px 0 80px 0;
+    padding: 120px 0 80px 0;
   }
   header img.imagem {
     width: 100%;
@@ -122,6 +122,9 @@ Responsivo
   }
   header .texto button {
     font-size: 1rem;
+  }
+  header .faixa {
+    top: 0;
   }
   header .faixa p {
     font-size: 0.8rem;
