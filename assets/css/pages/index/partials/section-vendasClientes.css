@@ -9,10 +9,7 @@ section.vendasClientes {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url('../../../../images/index/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--cor-cinza-1);
   padding: 100px 100px 50px 100px;
 }
 
@@ -136,6 +133,9 @@ section.vendasClientes .slide .itens .item {
 section.vendasClientes .slide .itens .item img {
   width: 130px;
   height: 130px;
+  background-color: var(--cor-branco);
+  padding: 10px;
+  border-radius: 25px;
 }
 
 section.vendasClientes .slide .itens .item p {
@@ -143,7 +143,7 @@ section.vendasClientes .slide .itens .item p {
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--cor-cinza-4);
-  background-color: var(--cor-cinza-1);
+  background-color: var(--cor-branco);
   padding: 30px;
   border-radius: 15px;
   margin: 0 0 0 20px;

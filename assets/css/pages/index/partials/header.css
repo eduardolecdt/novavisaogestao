@@ -22,18 +22,29 @@ header .faixa {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: var(--cor-cinza-2);
+  background-color: var(--cor-laranja);
   position: absolute;
   top: 50px;
   left: 0;
   width: 100%;
+  overflow: hidden;
 }
 
 header .faixa p {
   font-family: var(--fonte-medium);
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--cor-branco);
-  padding: 10px 30px;
+  padding: 20px 30px;
+  animation: letraFaixaMovendo 18s infinite linear;
+}
+
+@keyframes letraFaixaMovendo {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 
 header .texto {
@@ -45,7 +56,7 @@ header .texto {
   width: 100%;
   max-width: 700px;
   height: 100%;
-  padding: 200px 100px;
+  padding: 250px 100px 200px 100px;
 }
 
 header .texto h2 {
@@ -57,7 +68,7 @@ header .texto h2 {
 header .texto h1 {
   font-family: var(--fonte-bold);
   font-size: 2.5rem;
-  color: var(--cor-cinza-4);
+  color: var(--cor-laranja);
   padding: 10px 0 0 0;
 }
 
@@ -127,7 +138,8 @@ Responsivo
     top: 0;
   }
   header .faixa p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 12px 30px;
+    animation: none;
   }
 }

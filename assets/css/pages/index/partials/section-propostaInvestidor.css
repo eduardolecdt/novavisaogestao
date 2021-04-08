@@ -6,7 +6,7 @@ INDEX > section - propostaInvestidor
 
 section.propostaInvestidor {
   width: 100%;
-  background-color: var(--cor-cinza-2);
+  background-color: var(--cor-cinza-1);
 }
 
 section.propostaInvestidor .conteudo {
@@ -41,7 +41,7 @@ section.propostaInvestidor .conteudo .texto p {
   font-family: var(--fonte-medium);
   font-size: 1.7rem;
   line-height: 1.5;
-  color: var(--cor-branco);
+  color: var(--cor-cinza-4);
   width: 100%;
   max-width: 600px;
 }
@@ -50,7 +50,7 @@ section.propostaInvestidor .conteudo .texto button {
   font-family: var(--fonte-medium);
   font-size: 1rem;
   line-height: 1.5;
-  color: var(--cor-branco);
+  color: var(--cor-laranja);
   background-color: transparent;
   text-decoration: underline;
   text-align: left;

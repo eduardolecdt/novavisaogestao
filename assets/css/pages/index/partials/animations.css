@@ -1,0 +1,71 @@
+/*
+
+INDEX > ANIMATIONS
+
+*/
+
+div[name="animarAqui1"],
+div[name="animarAqui2"],
+div[name="animarAqui3"],
+div[name="animarAqui4"],
+div[name="animarAqui5"],
+div[name="animarAqui6"],
+div[name="animarAqui7"],
+div[name="animarAqui8"],
+img[name="carro"] {
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.classeAnimarEsquerda {
+  opacity: 1 !important;
+  animation: aparecendoEsquerda 0.5s linear;
+}
+
+.classeAnimarDireita {
+  opacity: 1 !important;
+  animation: aparecendoDireita 0.5s linear;
+}
+
+@keyframes aparecendoEsquerda {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes aparecendoDireita {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .classeAnimarEsquerda {
+    animation: none;
+  }
+  .classeAnimarDireita {
+    animation: none;
+  }
+  div[name="animarAqui1"],
+  div[name="animarAqui2"],
+  div[name="animarAqui3"],
+  div[name="animarAqui4"],
+  div[name="animarAqui5"],
+  div[name="animarAqui6"],
+  div[name="animarAqui7"],
+  div[name="animarAqui8"],
+  img[name="carro"] {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+}

@@ -33,7 +33,7 @@ section.maisFacilidade .titulo h2 {
   width: 100%;
   max-width: 550px;
   margin-right: auto;
-  color: var(--cor-cinza-4);
+  color: var(--cor-laranja);
 }
 
 section.maisFacilidade .titulo .setas {
@@ -180,26 +180,19 @@ Responsivo
     font-size: 1.8rem;
   }
   section.maisFacilidade .titulo .setas {
-    padding: 30px 0 0 0;
-  }
-  section.maisFacilidade .titulo .setas button {
-    margin-left: 0;
-    margin-right: 20px;
-  }
-  section.maisFacilidade .titulo .setas button img {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    min-height: 40px;
+    display: none;
   }
   section.maisFacilidade .slide {
-    overflow: scroll;
+    flex-direction: column;
+    overflow: initial;
   }
   section.maisFacilidade .slide .itens {
+    flex-direction: column;
     padding: 0 0 0 30px;
   }
   section.maisFacilidade .slide .itens .item {
-    margin-right: 30px;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
   section.maisFacilidade .slide .itens .item h3 {
     font-size: 1.2rem;

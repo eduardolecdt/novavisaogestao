@@ -6,7 +6,7 @@ INDEX > section - bandeiraBranca
 
 section.bandeiraBranca {
   width: 100%;
-  background-color: var(--cor-cinza-2);
+  background-color: var(--cor-cinza-1);
 }
 
 section.bandeiraBranca .conteudo {
@@ -41,7 +41,7 @@ section.bandeiraBranca .conteudo .texto p {
   font-family: var(--fonte-medium);
   font-size: 1.7rem;
   line-height: 1.5;
-  color: var(--cor-branco);
+  color: var(--cor-cinza-4);
   width: 100%;
   max-width: 500px;
 }

@@ -12,6 +12,7 @@ INDEX
 
 /* Partials */
 
+@import './partials/animations.css';
 @import './partials/nav.css';
 
 @import './partials/header.css';
