@@ -1,7 +1,9 @@
-## Escolha um lugar no seu computador para adicionar o repositório
+# Projeto Nova Visão Gestão
 
-> digite o comando abaixo na pasta
+Códigos criados por
+[@eduardolecdt](https://instagram.com/eduardolecdt)
 
-```
+Clone o repositório em seu computador usando
+```sh
 git clone https://github.com/eduardolecdt/novavisaogestao.git
 ```
